@@ -3,10 +3,12 @@
 }
 <h1>@ViewData["Title"]</h1>
 <p>Age: @ViewBag.age</p>
-@if(ViewBag.age <= 18){
-    <p>FBI Open up!!!</p>
-}else{
-    <p>Gors naka!!</p>
+@if(ViewBag.age < 18){
+    <p>MINOr DE EDAD</p>
+}else if(ViewBag.age >18 && ViewBag.age < 30 ){
+    <p>ADULT</p>
+}else if(ViewBag.age >= 60 ){
+    <p>Pag minyo na</p>
 }
 <p>Use this page to detail your site's privacy policy.</p>
 

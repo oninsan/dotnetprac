@@ -23,7 +23,7 @@ public class HomeController : Controller
     public IActionResult Privacy()
     { 
        
-        ViewBag.age = 20;
+        ViewBag.age = 60;
         // viewbug(Objec style)
         ViewBag.name = "nino";
         return View();
