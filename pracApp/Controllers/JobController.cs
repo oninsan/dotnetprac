@@ -4,7 +4,7 @@ using pracApp.Models;
 
 namespace pracApp.Controllers;
 
-public class JobConroller : Controller
+public class JobController : Controller
 {
       public IActionResult Index(){
         return View();

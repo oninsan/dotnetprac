@@ -15,11 +15,17 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        // viewdata
+        ViewData["count"] = 5;
         return View();
     }
 
     public IActionResult Privacy()
-    {
+    { 
+       
+        ViewBag.age = 20;
+        // viewbug(Objec style)
+        ViewBag.name = "nino";
         return View();
     }
 

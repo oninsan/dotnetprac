@@ -2,5 +2,11 @@
     ViewData["Title"] = "Privacy Policy";
 }
 <h1>@ViewData["Title"]</h1>
-
+<p>Age: @ViewBag.age</p>
+@if(ViewBag.age <= 18){
+    <p>FBI Open up!!!</p>
+}else{
+    <p>Gors naka!!</p>
+}
 <p>Use this page to detail your site's privacy policy.</p>
+

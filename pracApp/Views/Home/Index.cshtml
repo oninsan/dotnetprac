@@ -4,6 +4,10 @@
 }
 @* <a href="/abao/index">link ni siya</a> *@
 @* @Html.ActionLink("Bisag unsa","index", "abao") *@
+
+@* using viewdata *@
 <div class="text-center">
     <h1 class="display-4">Welcome Nino</h1>
+    <h1>@ViewData["count"]</h1>
+    <h1>@ViewBag.name</h1>
 </div>
