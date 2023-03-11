@@ -17,14 +17,39 @@ public class HomeController : Controller
     {
         // viewdata
         ViewData["count"] = 5;
-        return View();
+
+        // Person onin = new Person();
+        // onin.Id=1;
+        // onin.Fullname = "nino abao";
+        // onin.age = 20;
+
+        Person Joman = new Person(){
+            Id=1,
+            Fullname="Joman  Lomusad",
+            age=30,
+        };
+        Person onin = new Person(){
+            Id=2,
+            Fullname="Onin Abao",
+            age=20,
+        };
+        Person Jake = new Person(){
+            Id=3,
+            Fullname="Nino Jake Catarata",
+            age=30,
+        };
+        List<Person> listP = new List<Person>();
+        listP.Add(Joman);
+        listP.Add(onin);
+        listP.Add(Jake);
+        return View(listP);
     }
 
     public IActionResult Privacy()
     { 
        
         ViewBag.age = 30;
-        // viewbug(Objec style)
+        // viewbag(Objec style)
         ViewBag.name = "nino";
         return View();
     }
